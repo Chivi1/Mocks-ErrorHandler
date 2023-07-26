@@ -28,8 +28,8 @@ router.post("/mockingproducts", (req, res) => {
   
     try {
       for (let i = 0; i < count; i++) {
-        const user = generateProduct(); 
-        user.push(user);
+        const product = generateProduct(); 
+        products.push(product);
       }
       res.send({ status: "success", message: `${count} usuarios agregados` });
     } catch (error) {
